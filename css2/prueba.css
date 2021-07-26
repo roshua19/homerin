@@ -61,7 +61,10 @@ p {
   gap: 0px 0px;
   background-color: #F1F1F1;
   grid-auto-flow: row;
-  grid-template-areas: "Menu Menu Menu Menu" "Carousel Carousel Carousel Carousel" "Presentacion Presentacion Descripcion Descripcion" "Footer Footer Footer Footer"; }
+  grid-template-areas: "Menu Menu Menu Menu"
+ "Carousel Carousel Carousel Carousel"
+ "Presentacion Presentacion Descripcion Descripcion"
+ "Footer Footer Footer Footer"; }
 
 .Menu {
   grid-area: Menu;
@@ -105,7 +108,12 @@ p {
   gap: 0px 0px;
   background-color: #F1F1F1;
   grid-auto-flow: row;
-  grid-template-areas: "Menu Menu Menu Menu" "Banner Banner Banner Banner" "Foto1 Foto2 Foto3 Foto4" "Texto1 Texto2 Texto3 Texto4" "Banner2 Banner2 Banner2 Banner2" "footer footer footer footer"; }
+  grid-template-areas: "Menu Menu Menu Menu"
+ "Banner Banner Banner Banner"
+ "Foto1 Foto2 Foto3 Foto4"
+ "Texto1 Texto2 Texto3 Texto4"
+ "Banner2 Banner2 Banner2 Banner2"
+ "footer footer footer footer"; }
 
 .BannerNosotras {
   grid-area: Banner;
@@ -187,7 +195,11 @@ p {
   gap: 0px 0px;
   background-color: #F1F1F1;
   grid-auto-flow: row;
-  grid-template-areas: "Menu Menu Menu Menu" "Banner Banner Banner Banner" "Form Form Map Map" "Form Form Map Map" "footer footer footer footer"; }
+  grid-template-areas: "Menu Menu Menu Menu"
+ "Banner Banner Banner Banner"
+ "Form Form Map Map"
+ "Form Form Map Map"
+ "footer footer footer footer"; }
 
 .BannerContacto {
   grid-area: Banner;
@@ -217,7 +229,12 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.3fr 1fr 1fr 1.4fr 1.1fr 0.1fr;
-  grid-template-areas: "Menu Menu Menu" "bannerProductos bannerProductos bannerProductos" "textoProductos textoProductos textoProductos" "SinGluten1 Vegano1 Tradicional1" "SinGluten3 Vegano2 Tradicional2" "footer footer footer"; }
+  grid-template-areas: "Menu Menu Menu"
+ "bannerProductos bannerProductos bannerProductos"
+ "textoProductos textoProductos textoProductos"
+ "SinGluten1 Vegano1 Tradicional1"
+ "SinGluten3 Vegano2 Tradicional2"
+ "footer footer footer"; }
 
 .bannerProductos {
   grid-area: bannerProductos;
