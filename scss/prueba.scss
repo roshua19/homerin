@@ -40,6 +40,7 @@ body {
    font-family: 'Cormorant Garamond', serif;
    color:black;
    background-color:#F1F1F1;
+
 }
 
 /*Texto*/
@@ -80,7 +81,7 @@ p{
 .ContainerIndex {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1.2fr 2.1fr 0.1fr;
+  grid-template-rows: 0.1fr 1fr 1.8fr 0.1fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   background-color:#F1F1F1;
@@ -100,7 +101,6 @@ p{
 
 .Carousel { 
   grid-area: Carousel;
-  margin-top: 5%;
 
 }
 
@@ -139,40 +139,30 @@ p{
 .ContainerNosotras {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 0.8fr 1fr 0.7fr 1fr 0.1fr;
+  grid-template-rows: 0.1fr 0.8fr 1fr 0.5fr 0.1fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
-  background-color:#F1F1F1;
   grid-auto-flow: row;
   grid-template-areas:
     "Menu Menu Menu Menu"
     "Banner Banner Banner Banner"
     "Foto1 Foto2 Foto3 Foto4"
     "Texto1 Texto2 Texto3 Texto4"
-    "Banner2 Banner2 Banner2 Banner2"
     "footer footer footer footer";
+    background-color:#F1F1F1;
 
 }
 
 .BannerNosotras { 
-  grid-area: Banner; 
-  background-image: url(img/nosotras1.jpg);
-  height: 320px;      
-  background-repeat: no-repeat;   
-  background-position: bottom;   
-  background-size: cover; 
-  margin-top: 1px;
-  opacity: 0.8;
+  grid-area: Banner;
+
 }
 
-.Banner2 { 
-  grid-area: Banner2; 
-  background-image: url(img/nosotras2.jpg);
-  height: 300px;      
-	background-repeat: no-repeat;   
-	background-position: center;   
-	background-size: cover; 
-  margin-top: 1px;
+.FotoBanner {
+  background-image: url(../img/banner3.jpg);   
+  background-repeat: no-repeat;  
+  background-position: bottom;      
+  background-size: cover; 
 }
 
 .heroText { 
@@ -243,7 +233,7 @@ p{
 .ContainerContacto{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.3fr 1.4fr 1.3fr 1.6fr 0.1fr;
+  grid-template-rows: 0.1fr 0.8fr 1.3fr 1fr 0.1fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   background-color:#F1F1F1;
@@ -258,12 +248,11 @@ p{
 
 .BannerContacto { 
   grid-area: Banner; 
-  background-image: url(img/contacto.jpg);
+  background-image: url(../img/contacto.jpg);
   height: 320px;      
   background-repeat: no-repeat;   
   background-position: top;   
   background-size: cover; 
-  margin-top: 17px;
   opacity: 0.8;
 
   
@@ -289,7 +278,7 @@ p{
 .GridProductos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 0.3fr 1fr 1fr 1.4fr 1.1fr 0.1fr;
+    grid-template-rows: 0.1fr 0.8fr 1fr 1.4fr 1.1fr 0.1fr;
     grid-template-areas:
       "Menu Menu Menu"
       "bannerProductos bannerProductos bannerProductos"
@@ -297,19 +286,20 @@ p{
       "SinGluten1 Vegano1 Tradicional1"
       "SinGluten3 Vegano2 Tradicional2"
       "footer footer footer";
+      background-color:#F1F1F1;
 
   }
 
   .bannerProductos { 
       grid-area: bannerProductos; 
-      background-image: url(img/productos.jpg);
+      background-image: url(../img/productos.jpg);
       height: 320px;      
       background-repeat: no-repeat;   
       background-position: top;   
       background-size: cover; 
-      margin-top: 17px;
       opacity: 0.8;
     }
+
   .textoProductos{
     grid-area:textoProductos;
     margin-left: 10%;
@@ -371,8 +361,75 @@ p{
     grid-area: footer; 
 }
 
+/**Grid Servicios**/
+.containerServicio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 0.8fr 1fr 1fr 0.3fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Menu Menu"
+    "Bannerservicios Bannerservicios"
+    "Descripcion1 Servicio1"
+    "Servicio2 Descripcion2"
+    "footer footer";
+  background-color:#F1F1F1;
+  height: 100%;
+}
+
+.Bannerservicios { 
+  grid-area: Bannerservicios; 
+  background-image: url(../img/banner1.jpg);
+  height: 320px;      
+  background-repeat: no-repeat;   
+  background-position: center;   
+  background-size: cover; 
+  opacity: 0.8;
+}
+
+.Menu { 
+  grid-area: Menu; }
+
+.footer { 
+  grid-area: footer; }
+
+.Servicio1 { 
+  grid-area: Servicio1; 
+  margin-left: 05%;
+  margin-right: 05%;
+  margin-top: 10%;
+  margin-bottom: 04%;
+}
+
+.Servicio2 { 
+  grid-area: Servicio2; 
+  margin-left: 20%;
+  margin-right: 05%;
+  margin-bottom: 05%;
+  margin-top: 03%;
+}
+
+.Descripcion1 { 
+  grid-area: Descripcion1; 
+  margin-left: 20%;
+  margin-right: 05%;
+  margin-top: 10%;
+  margin-bottom: 04%;
+}
+
+.Descripcion2 { 
+  grid-area: Descripcion2;
+  margin-left: 01%;
+  margin-right: 20%;
+  margin-bottom: 05%;
+  margin-top: 03%;
+}
+  
 
 /*Animacion*/
+
 .container {
     position: relative;
     width: 50%;
@@ -457,9 +514,6 @@ color:black;
 font-size: 18px;
 }
 
-
-/**Bootstrap**/
-
 /**Footer**/
 .navFooter {
   background-color:#71825B;  
@@ -488,4 +542,237 @@ font-size: 18px;
 a:hover:not(.active) {
   text-decoration: none;
   color:#3b462d;
+}
+
+/*media quereys*/
+
+@media only screen and (max-width:500px) {
+    
+.ContainerIndex {
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr 1.8fr 0.1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  background-color:#F1F1F1;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Menu"
+    "Carousel"
+    "Presentacion"
+    "Descripcion"
+    "Footer";
+}
+
+.Presentacion {
+  margin-left: 15%;
+  margin-top: -20%;
+}
+.Descripcion {
+  margin-top: 02%;
+  margin-right: 05%;
+  margin-left: 05%;
+}
+/*Nosotras*/
+.ContainerNosotras {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 0.8fr 1fr 0.5fr 1.3fr 0.1fr;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    "Menu Menu"
+    "Banner Banner"
+    "Foto1 Foto2"
+    "Texto1 Texto2"
+    "Foto3 Foto4"
+    "Texto3 Texto4"
+    "footer footer";
+}
+.Texto3 { 
+  margin-top: -70%
+}
+
+.Texto4 { 
+  margin-top: -70%
+}
+/*Contacto*/
+.ContainerContacto{
+  grid-template-columns: 1fr ;
+  grid-template-rows: 0.1fr 0.8fr 1.3fr 1fr 0.1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Menu"
+    "Banner"
+    "Form"
+    "Map"
+    "footer";
+}
+/*Procutos*/
+
+.GridProductos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.8fr 0.8fr fit-content fit-content fit-content fit-content fit-content fit-content 0.1fr;
+  grid-template-areas:
+    "Menu"
+    "bannerProductos"
+    "textoProductos"
+    "SinGluten1"
+    "Vegano1"
+    "Tradicional1" 
+    "Sin gluten3"
+    "Vegano2" 
+    "Tradicional2"
+    "footer";
+}
+
+/*Servicios*/
+.containerServicio {
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.8fr 1fr 1fr 0.3fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Menu"
+    "Bannerservicios"
+    "Servicio1"
+    "Descripcion1"
+    "Servicio2"
+    "Descripcion2"
+    "footer";
+}
+.Servicio1 { 
+  grid-area: Servicio1; 
+  margin-left: 05%;
+  margin-right: 05%;
+  margin-top: 10%;
+  margin-bottom: 01%;
+}
+
+.Servicio2 { 
+  grid-area: Servicio2; 
+  margin-left: 5%;
+  margin-right: 05%;
+  margin-bottom: 05%;
+  margin-top: 03%;
+}
+
+.Descripcion1 { 
+  grid-area: Descripcion1; 
+  margin-left: 20%;
+  margin-right: 15%;
+  margin-top: -15%;
+  margin-bottom: 04%;
+}
+
+.Descripcion2 { 
+  grid-area: Descripcion2;
+  margin-left: 20%;
+  margin-right: 15%;
+  margin-bottom: 05%;
+  margin-top: 03%;
+}
+}
+
+
+
+@media only screen and (min-width:501px) and (max-width:850px){
+
+.ContainerIndex {
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr 1.8fr 0.1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  background-color:#F1F1F1;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Menu"
+    "Carousel"
+    "Presentacion"
+    "Descripcion"
+    "Footer";
+
+}
+
+.Presentacion {
+  margin-left: 15%;
+  margin-top: -10%;
+}
+.Descripcion {
+  margin-top: 02%;
+  margin-right: 05%;
+  margin-left: 05%;
+}
+
+/*Nosotras*/
+.Texto1 { 
+  grid-area: Texto1; 
+  margin-left: 10%;
+  margin-top:-43%;
+}
+
+.Texto2 { 
+  grid-area: Texto2; 
+  margin-left: 11%;
+  margin-top: -40%;
+}
+
+.Texto3 { 
+  grid-area: Texto3; 
+  margin-left: 11%;
+  margin-top: -40%;
+}
+
+.Texto4 { 
+  grid-area: Texto4; 
+  margin-left: 11%;
+  margin-right: 11%;
+  margin-top: -40%;
+}
+/*Servicios*/
+.containerServicio {
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.8fr 1fr 1fr 0.3fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Menu"
+    "Bannerservicios"
+    "Servicio1"
+    "Descripcion1"
+    "Servicio2"
+    "Descripcion2"
+    "footer";
+}
+.Servicio1 { 
+  grid-area: Servicio1; 
+  margin-left: 15%;
+  margin-right: 05%;
+  margin-top: 10%;
+  margin-bottom: 01%;
+}
+
+.Servicio2 { 
+  grid-area: Servicio2; 
+  margin-left: 15%;
+  margin-right: 05%;
+  margin-bottom: 05%;
+  margin-top: 03%;
+}
+
+.Descripcion1 { 
+  grid-area: Descripcion1; 
+  margin-left: 20%;
+  margin-right: 15%;
+  margin-top: -10%;
+  margin-bottom: 04%;
+}
+
+.Descripcion2 { 
+  grid-area: Descripcion2;
+  margin-left: 20%;
+  margin-right: 15%;
+  margin-bottom: 05%;
+  margin-top: 03%;
+}
 }
